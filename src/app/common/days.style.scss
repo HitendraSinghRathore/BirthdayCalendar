@@ -1,0 +1,20 @@
+.card {
+  display: inline-block;
+}
+.text-class {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+.no-data {
+  height: 300px;
+  width: 190px;
+}
+.no-data-text {
+  top: 50%;
+  left: 50%;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}

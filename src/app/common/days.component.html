@@ -1,0 +1,35 @@
+<div class="shadow-xl bg-white mx-2" style="height: 332px; width: 190px;">
+  <div
+    class="bg-purple-700 text-white font-bold p-1 pr-2 w-full h-8 text-right rounded-t"
+  >
+    {{ day }}
+  </div>
+  <div
+    class="p-0 flex"
+    style="flex-wrap: wrap;"
+    *ngIf="cardDays?.length > 0 && showCard"
+  >
+    <div
+      class="card text-center relative"
+      *ngFor="let card of cardDays"
+      [ngStyle]="{
+        color: card?.font,
+        'background-color': card?.color,
+        'height.px': card?.height,
+        'width.px': card?.width
+      }"
+    >
+      <div class="text-lg text-class">{{ card?.name | name }}</div>
+    </div>
+  </div>
+  <div class="p-0" *ngIf="cardDays?.length === 0 && showCard">
+    <div class="no-data bg-gray-500 relative">
+      <div class="absolute no-data-text text-white">
+        <div class="flex">
+          <img src="assets/slash.svg" style="height: 20px;" class="mr-2" /> No
+          B'Day
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
