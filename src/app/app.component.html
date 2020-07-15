@@ -12,8 +12,8 @@
       [birthDays]="cardData[i]"
     ></app-days>
   </div>
-  <div class="w-full flex px-8">
-    <div class="w-1/2 p-2">
+  <div class="w-full flex flex-wrap px-8">
+    <div class="w-full md:w-1/2 p-2">
       <textarea
         rows="20"
         cols="50"
@@ -21,7 +21,7 @@
         [(ngModel)]="birthdayData"
       ></textarea>
     </div>
-    <div class="w-1/2 py-8 px-8 text-left">
+    <div class="w-full md:w-1/2 py-8 px-8 text-left">
       <label for="year" class="text-gray-700 block font-bold mb-2">Year</label>
       <input
         id="year"
